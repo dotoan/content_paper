@@ -46,7 +46,9 @@ public class ReviewAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.list_items, viewGroup,false);
+        if (view == null) {
+            view = inflater.inflate(R.layout.list_items, viewGroup,false);
+        }
         TextView tv = (TextView) view.findViewById(R.id.tv1);
         ImageView iv = (ImageView) view.findViewById(R.id.iv1);
         tv.setText(list.get(i).getTitle());

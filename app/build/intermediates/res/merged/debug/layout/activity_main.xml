@@ -12,30 +12,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Read"
+        android:text="News"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:id="@+id/bt_read"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:text="Hello World!"
-        android:id="@+id/tv_title" />
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/iv_icon"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_review">
+        android:id="@+id/lv_review"
+        android:layout_marginTop="5dp">
     </ListView>
 </LinearLayout>
 <!-- From: file:/E:/source_code/android/ContentOfPage/app/src/main/res/layout/activity_main.xml -->
